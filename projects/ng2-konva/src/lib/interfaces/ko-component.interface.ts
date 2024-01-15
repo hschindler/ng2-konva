@@ -1,7 +1,9 @@
 import { Component, EventEmitter } from '@angular/core';
-import { ShapeConfigTypes } from '../utils/configTypes';
-import { Stage } from 'konva/lib/Stage';
+import { FastLayer } from 'konva/lib/FastLayer';
+import { Group } from 'konva/lib/Group';
+import { Layer } from 'konva/lib/Layer';
 import { Shape } from 'konva/lib/Shape';
+import { Stage } from 'konva/lib/Stage';
 import { Arc } from 'konva/lib/shapes/Arc';
 import { Arrow } from 'konva/lib/shapes/Arrow';
 import { Circle } from 'konva/lib/shapes/Circle';
@@ -19,9 +21,7 @@ import { Text } from 'konva/lib/shapes/Text';
 import { TextPath } from 'konva/lib/shapes/TextPath';
 import { Transformer } from 'konva/lib/shapes/Transformer';
 import { Wedge } from 'konva/lib/shapes/Wedge';
-import { Group } from 'konva/lib/Group';
-import { Layer } from 'konva/lib/Layer';
-import { FastLayer } from 'konva/lib/FastLayer';
+import { ShapeConfigTypes } from '../utils/configTypes';
 import { NgKonvaEventObject } from './ngKonvaEventObject';
 
 export abstract class KonvaComponent extends Component {
